@@ -2,25 +2,26 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
+import { IoMdCloudDownload } from "react-icons/io";
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState(""); 
+  const [activeLink, setActiveLink] = useState("profile");
 
   const handleLinkClick = (section) => {
-    setActiveLink(section); 
+    setActiveLink(section);
   };
 
   const links = (
     <>
       <li>
         <HashLink
-          to="/#profile"
+          to="/#home"
           className={`${
             activeLink === "profile" ? "text-red-500" : "hover:text-red-500"
           }`}
           onClick={() => handleLinkClick("profile")}
         >
-          Profile
+          Home
         </HashLink>
       </li>
       <li>
@@ -58,23 +59,27 @@ const Navbar = () => {
       </li>
       <li>
         <HashLink
-          to="/#education"
+          to="/#contact"
           className={`${
             activeLink === "education" ? "text-red-500" : "hover:text-red-500"
           }`}
-          onClick={() => handleLinkClick("education")}
+          onClick={() => handleLinkClick("contact")}
         >
-          Education
+          Contact
         </HashLink>
       </li>
     </>
   );
 
   return (
-    <div className="navbar bg-base-200 fixed max-w-7xl h-20 opacity-60">
+    <div className="navbar bg-gray-600 fixed max-w-7xl h-20 opacity-60">
+     
       <div className="navbar-start">
-        <img src={logo} alt="" className="w-10" />
-        <Link to="/" className="btn btn-ghost md:flex hidden text-xl text-white">
+        <img src={logo} alt="" className="w-10 " />
+        <Link
+          to="/"
+          className="btn btn-ghost md:flex hidden text-xl text-white"
+        >
           Tanim Ahmmed
         </Link>
       </div>
@@ -106,7 +111,8 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link className="btn">Resume</Link>
+        <Link className="btn btn-primary rounded-3xl text-lg">Resume <IoMdCloudDownload />
+        </Link>
       </div>
     </div>
   );

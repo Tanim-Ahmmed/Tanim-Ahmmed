@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "title": "StudentWall - Enhancing Education",
+        "description": "A platform to connect students and educators, leveraging research and computer vision to improve learning experiences.",
+        "techStack": ["React", "Tailwind CSS", "Firebase", "Computer Vision"],
+        "image": "https://149842033.v2.pressablecdn.com/wp-content/uploads/2018/09/kenedy-free-personal-website-templates-1000x750.jpg",
+        "liveDemo": "https://studentwall.example.com",
+        "githubRepo": "https://github.com/yourusername/studentwall"
+      },
+      
+      {
+        "id": 2,
+        "title": "Firewall Networking System",
+        "description": "A Java-based system to enhance network security and manage access controls.",
+        "techStack": ["Java", "Socket Programming"],
+        "image": "https://149842033.v2.pressablecdn.com/wp-content/uploads/2018/09/kenedy-free-personal-website-templates-1000x750.jpg",
+        "liveDemo": "",
+        "githubRepo": "https://github.com/yourusername/firewall-networking"
+      },
+
+      {
+        "id": 3,
+        "title": "E-commerce Platform",
+        "description": "An online store with a modern design, integrated payment gateway, and real-time cart updates.",
+        "techStack": ["React", "Node.js", "Express", "MongoDB"],
+        "image": "https://149842033.v2.pressablecdn.com/wp-content/uploads/2018/09/kenedy-free-personal-website-templates-1000x750.jpg",
+        "liveDemo": "https://ecommerce.example.com",
+        "githubRepo": "https://github.com/yourusername/ecommerce-platform"
+      }
+      
+      
+]

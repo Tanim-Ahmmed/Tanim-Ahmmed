@@ -1,5 +1,4 @@
 import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import img from "../../assets/logo.png"
