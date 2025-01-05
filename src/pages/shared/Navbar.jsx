@@ -17,7 +17,7 @@ const Navbar = () => {
         <HashLink
           to="/#home"
           className={`${
-            activeLink === "profile" ? "text-red-500" : "hover:text-red-500"
+            activeLink === "profile" ? "text-orange-500" : "hover:text-orange-500"
           }`}
           onClick={() => handleLinkClick("profile")}
         >
@@ -28,7 +28,7 @@ const Navbar = () => {
         <HashLink
           to="/#projects"
           className={`${
-            activeLink === "projects" ? "text-red-500" : "hover:text-red-500"
+            activeLink === "projects" ? "text-orange-500" : "hover:text-orange-500"
           }`}
           onClick={() => handleLinkClick("projects")}
         >
@@ -39,7 +39,7 @@ const Navbar = () => {
         <HashLink
           to="/#skills"
           className={`${
-            activeLink === "skills" ? "text-red-500" : "hover:text-red-500"
+            activeLink === "skills" ? "text-orange-500" : "hover:text-orange-500"
           }`}
           onClick={() => handleLinkClick("skills")}
         >
@@ -50,7 +50,7 @@ const Navbar = () => {
         <HashLink
           to="/#about"
           className={`${
-            activeLink === "about" ? "text-red-500" : "hover:text-red-500"
+            activeLink === "about" ? "text-orange-500" : "hover:text-orange-500"
           }`}
           onClick={() => handleLinkClick("about")}
         >
@@ -61,7 +61,7 @@ const Navbar = () => {
         <HashLink
           to="/#contact"
           className={`${
-            activeLink === "education" ? "text-red-500" : "hover:text-red-500"
+            activeLink === "contact" ? "text-orange-500" : "hover:text-orange-500"
           }`}
           onClick={() => handleLinkClick("contact")}
         >
@@ -84,7 +84,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden sm:flex">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
+        <ul className="menu menu-horizontal  font-semibold px-1">{links}</ul>
       </div>
       <div className="navbar-end">
         <div className="dropdown">
@@ -106,7 +106,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 font-semibold rounded-box z-[1] mt-3 p-2 shadow"
           >
             {links}
           </ul>

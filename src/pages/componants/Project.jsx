@@ -10,7 +10,7 @@ const Project = () => {
       .then((data) => setProjects(data));
   }, []);
 
-  console.log(projects);
+
 
   return (
     <div className="bg-black">
@@ -36,7 +36,7 @@ const Project = () => {
                 <h2 className="text-white text-lg font-semibold mb-4">
                   {p.title}
                 </h2>
-                <p className="text-gray-200 text-sm text-center mb-6">
+                <p className="text-gray-200 text-sm text-center mb-6 sm:flex hidden">
                   {p.description}
                 </p>
                 <button className="btn btn-primary text-white rounded-3xl hover:bg-blue-700">

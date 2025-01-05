@@ -117,7 +117,7 @@ const Skills = () => {
             className=" shadow-md rounded-lg p-6 border border-gray-200"
           >
             <h3 className="text-xl font-semibold">{skill.name}</h3>
-            <p className="text-gray-500 mb-4">{skill.description}</p>
+            <p className="text-gray-500 mb-4 ">{skill.description}</p>
             <div className="flex items-end">
 
             
