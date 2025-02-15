@@ -5,7 +5,10 @@ import About from "../componants/About";
 import Contact from "../componants/Contact"
 const Home = () => {
   return (
-    <div id="home" className="pt-20 w-11/12 mx-auto">
+    <div id="home" className=" mx-auto">
+      <section className="pt-20 ">
+        
+      </section>
       <section>
         <Banner></Banner>
       </section>

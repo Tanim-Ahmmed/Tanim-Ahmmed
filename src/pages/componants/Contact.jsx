@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import emailjs from "@emailjs/browser";
@@ -6,7 +6,6 @@ import { useRef, useState } from "react";
 
 const Contact = () => {
   const form = useRef();
-  const [status, setStatus] = useState("");
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -24,28 +23,35 @@ const Contact = () => {
       );
   };
   return (
-    <div className="hero bg-black pt-20">
+    <div className="hero bg-black pt-20 pb-10">
       <div className="w-11/12 mx-auto">
         <div className="hero-content flex-col md:flex-row-reverse">
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left md:ml-6">
             <h1 className="text-5xl font-bold">Contact Me!</h1>
             <nav className="w-4/12 py-6 md:mx-0 mx-auto">
               <div className="grid grid-flow-col gap-4 text-2xl hover:cursor-pointer">
-                <a target="blank" href="https://github.com/Tanim-Ahmmed">
+                <a target="_blank" href="https://github.com/Tanim-Ahmmed">
                   <FaGithub />
                 </a>
                 <a
-                  target="blank"
+                  target="_blank"
                   href="https://www.linkedin.com/in/tanim-ahmmed"
                 >
                   <FaLinkedin />
                 </a>
                 <a
-                  target="blank"
+                  target="_blank"
                   href="https://www.facebook.com/Tanim.ahmmed123"
                 >
                   <FaFacebook />
                 </a>
+                <a
+                  target="blank"
+                  href="https://x.com/Tanim_Ahmeed"
+                >
+                  <FaTwitter/>
+                </a>
+                
               </div>
             </nav>
             <p className="py-6">
@@ -83,7 +89,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <div className="form-control mt-6">
-                <input type="submit" value="Send" className="btn btn-primary"></input>
+                <input type="submit" value="Send" className="btn bg-orange-400 hover:bg-orange-500"></input>
               </div>
             </form>
 

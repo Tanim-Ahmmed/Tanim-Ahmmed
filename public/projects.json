@@ -1,32 +1,32 @@
 [
     {
         "id": 1,
-        "title": "StudentWall - Enhancing Education",
-        "description": "A platform to connect students and educators, leveraging research and computer vision to improve learning experiences.",
-        "techStack": ["React", "Tailwind CSS", "Firebase", "Computer Vision"],
-        "image": "https://149842033.v2.pressablecdn.com/wp-content/uploads/2018/09/kenedy-free-personal-website-templates-1000x750.jpg",
-        "liveDemo": "https://studentwall.example.com",
-        "githubRepo": "https://github.com/yourusername/studentwall"
+        "title": "Enhancing Education With Studentwall",
+        "description": "An interactive online platform for enhance the educational experience by connecting students, tutors, and admin.",
+        "techStack": ["React", "Tailwind CSS", "Firebase", "Express"],
+        "image": "https://i.ibb.co.com/PGzNzhBk/Screenshot-2025-02-07-183141.png",
+        "liveDemo": "https://edubridge-b093b.web.app/",
+        "githubRepo": "https://github.com/Tanim-Ahmmed/Edu-Bridge"
       },
       
       {
         "id": 2,
-        "title": "Firewall Networking System",
-        "description": "A Java-based system to enhance network security and manage access controls.",
-        "techStack": ["Java", "Socket Programming"],
-        "image": "https://149842033.v2.pressablecdn.com/wp-content/uploads/2018/09/kenedy-free-personal-website-templates-1000x750.jpg",
-        "liveDemo": "",
-        "githubRepo": "https://github.com/yourusername/firewall-networking"
+        "title": "ServeTogether",
+        "description": "ServeTogether is a platform that connects volunteers with posts in need of assistance.",
+        "techStack": ["React", "Tailwind CSS", "Firebase", "Express"],
+        "image": "https://i.ibb.co.com/LdkFw6gV/Screenshot-2025-02-07-183223.png",
+        "liveDemo": "https://assignment-11-5bae2.web.app/",
+        "githubRepo": "https://github.com/Tanim-Ahmmed/Serve-Together"
       },
 
       {
         "id": 3,
-        "title": "E-commerce Platform",
-        "description": "An online store with a modern design, integrated payment gateway, and real-time cart updates.",
-        "techStack": ["React", "Node.js", "Express", "MongoDB"],
-        "image": "https://149842033.v2.pressablecdn.com/wp-content/uploads/2018/09/kenedy-free-personal-website-templates-1000x750.jpg",
-        "liveDemo": "https://ecommerce.example.com",
-        "githubRepo": "https://github.com/yourusername/ecommerce-platform"
+        "title": "A Game Review Platform",
+        "description": "Welcome to Chill Gamer, a platform designed for game enthusiasts to share, explore, and review their favorite games.",
+        "techStack": ["React", "Node.js", "Express", "Firebase", "MongoDB"],
+        "image": "https://i.ibb.co.com/rKwnjKJG/Screenshot-2025-02-07-183339.png",
+        "liveDemo": "https://chill-gamer-3c8fa.web.app/",
+        "githubRepo": "https://github.com/Tanim-Ahmmed/Chill-Gamer"
       }
       
       

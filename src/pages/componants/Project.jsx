@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaGithub } from "react-icons/fa";
 
 const Project = () => {
   const [projects, setProjects] = useState([]);
@@ -19,7 +19,7 @@ const Project = () => {
           Projects
         </h2>
       </div>
-      <div className="bg-gray-900 mx-10 p-5 rounded-3xl text-center flex justify-center">
+      <div className="border border-orange-400 mx-10 p-5 rounded-3xl text-center flex justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((p) => (
             <div
@@ -39,9 +39,17 @@ const Project = () => {
                 <p className="text-gray-200 text-sm text-center mb-6 sm:flex hidden">
                   {p.description}
                 </p>
-                <button className="btn btn-primary text-white rounded-3xl hover:bg-blue-700">
-                  View Project <FaArrowRight className="ml-2 inline" />
-                </button>
+                <div className="flex justify-between gap-3">
+                
+                <a  href={p.liveDemo} target="_blank" className="btn bg-orange-400 text-white rounded-xl hover:bg-orange-700">
+                  Demo <FaArrowRight className="ml-2 inline" />
+                </a>
+
+                <a href={p.githubRepo} target="_blank" className="text-black p-2 rounded-full hover:bg-orange-700 bg-orange-400 text-3xl">
+                <FaGithub></FaGithub>
+                </a>
+                </div>
+               
               </div>
             </div>
           ))}

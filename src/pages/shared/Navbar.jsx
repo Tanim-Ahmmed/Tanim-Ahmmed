@@ -72,16 +72,17 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-gray-600 fixed max-w-7xl h-20 opacity-60">
+    <div className="navbar bg-gray-800 fixed max-w-7xl h-20 opacity-60">
      
       <div className="navbar-start">
-        <img src={logo} alt="" className="w-10 " />
-        <Link
-          to="/"
+       
+        <HashLink
+           to="/#home"
           className="btn btn-ghost md:flex hidden text-xl text-white"
         >
+           <img src={logo} alt="" className="w-10 " />
           Tanim Ahmmed
-        </Link>
+        </HashLink>
       </div>
       <div className="navbar-center hidden sm:flex">
         <ul className="menu menu-horizontal  font-semibold px-1">{links}</ul>
@@ -111,8 +112,16 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link className="btn btn-primary rounded-3xl text-lg">Resume <IoMdCloudDownload />
-        </Link>
+        <a
+          href="/resume(4).pdf"
+          download="Tanim_Ahmmed_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn bg-orange-400 text-black hover:bg-orange-500 rounded-3xl text-lg"
+        >
+          Resume <IoMdCloudDownload />
+        </a>
+
       </div>
     </div>
   );

@@ -114,18 +114,18 @@ const Skills = () => {
         {skills.map((skill) => (
           <div
             key={skill.id}
-            className=" shadow-md rounded-lg p-6 border border-gray-200"
+            className=" shadow-md rounded-lg p-6 border border-orange-400"
           >
             <h3 className="text-xl font-semibold">{skill.name}</h3>
             <p className="text-gray-500 mb-4 ">{skill.description}</p>
             <div className="flex items-end">
 
             
-            <img src={skill.logo} alt="" className="bg-gray-800 rounded-l-full rounded-tr-full sm:w-20 sm:h-20  h-16 w-16 object-cover" />
+            <img src={skill.logo} alt="" className="bg-gray-80 rounded-l-full rounded-tr-full sm:w-20 sm:h-20  h-16 w-16 object-cover" />
             <div className="relative w-full h-4 bg-gray-200 rounded-r-full overflow-hidden">
               
               <div
-                className="absolute top-0 left-0 h-full bg-gray-800"
+                className="absolute top-0 left-0 h-full bg-slate-700"
                 style={{ width: `${skill.level}%` }}
               >
               </div>
