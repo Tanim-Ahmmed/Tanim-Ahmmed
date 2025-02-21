@@ -12,12 +12,6 @@
 
 ###
 
-<h2 align="left">📝About me:</h2>
-
-###
-
-<h4 align="left">🔭 I’m currently working on a new project: EduBridge<br>🌱 I’m currently learning TypeScript<br>👨🏻‍💻 Most of my projects are available on GitHub<br>🚀 Take a look at my most recent project: Cinnamons-hut<br>💬 Ask me about anything tech-related; I’m always happy to help!<br>📫 Feel free to connect with me on LinkedIn<br>📝 Check out my Resume<br>📚 When I’m free, I enjoy reading fantasy and fiction novels.<br>📫 How to reach me: tanimahmmed234@gmail.com</h4>
-
 # 💫 About Me:
  🔭 I’m currently working on a new project: EduBridge<br>🌱 I’m currently learning TypeScript<br>👨🏻‍💻 Most of my projects are available on GitHub<br>🚀 Take a look at my most recent project: Cinnamons-hut<br>💬 Ask me about anything tech-related; I’m always happy to help!<br>📫 Feel free to connect with me on LinkedIn<br>📝 Check out my Resume<br>📚 When I’m free, I enjoy reading fantasy and fiction novels.<br>📫 How to reach me: tanimahmmed234@gmail.com
 
