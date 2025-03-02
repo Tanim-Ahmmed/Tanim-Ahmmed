@@ -8,7 +8,9 @@
 
 ###
 
-<h4 align="left">I'm Tanim Ahmmed, A Web developer  🌐. I'm from Bangladesh, living in Dhaka. You can find me on LinkedIn [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/tanim-ahmmed).</h4>
+<h4 align="left">I'm Tanim Ahmmed, A Web developer  🌐. I'm from Bangladesh, living in Dhaka. You can find me on LinkedIn <a href="https://linkedin.com/in/tanim-ahmmed">
+  <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn">
+</a> .</h4>
 
 ###
 
