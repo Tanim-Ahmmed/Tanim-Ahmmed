@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="200" src="https://i.ibb.co.com/M7r56wP/cover-me.jpg](https://www.amigoscode.com/assets/thumbnails/courses/full-stack-professional.webp"  />
+  <img height="200" src="https://i.ibb.co.com/ZRbxntXc/image-765c692c.png"  />
 </div>
 
 ###
