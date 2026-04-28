@@ -1,3 +1,140 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text-primary font-sans antialiased;
+    background-image:
+      radial-gradient(circle at top, rgba(242, 166, 90, 0.12), transparent 30%),
+      linear-gradient(180deg, #0b0d10 0%, #0f1318 100%);
+  }
+
+  ::selection {
+    @apply bg-accent text-background;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display text-text-primary tracking-tight;
+  }
+
+  p {
+    @apply text-text-secondary text-body;
+  }
+
+  a,
+  button,
+  input,
+  textarea {
+    @apply transition-all duration-200 ease-out;
+  }
+}
+
+@layer components {
+  .app-shell {
+    @apply relative min-h-screen overflow-x-hidden;
+  }
+
+  .section-shell {
+    @apply relative py-16 md:py-24 lg:py-32;
+  }
+
+  .hero-noise::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.14;
+    mix-blend-mode: soft-light;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
+      radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08), transparent 30%),
+      radial-gradient(circle at 80% 10%, rgba(242,166,90,0.08), transparent 24%);
+    background-size: 140px 140px, 140px 140px, auto, auto;
+    background-position: center;
+  }
+
+  .hero-grid::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 72px 72px;
+    mask-image: radial-gradient(circle at center, black 25%, transparent 85%);
+    opacity: 0.2;
+  }
+
+  .section-heading {
+    @apply mx-auto mb-12 max-w-3xl text-center md:mb-16;
+  }
+
+  .section-eyebrow {
+    @apply mb-4 inline-flex rounded-full border border-glass-border bg-glass px-4 py-2 text-caption uppercase tracking-[0.24em] text-accent backdrop-blur-md;
+  }
+
+  .section-title {
+    @apply text-h2 md:text-display-lg;
+  }
+
+  .section-copy {
+    @apply mx-auto mt-4 max-w-2xl text-body text-text-secondary md:text-body-lg;
+  }
+
+  .glass-panel {
+    @apply border border-glass-border bg-glass backdrop-blur-md;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.24);
+  }
+
+  .premium-card {
+    @apply glass-panel rounded-3xl p-6 md:p-8;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.02) 100%);
+  }
+
+  .btn-primary-premium {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-accent-gradient px-5 py-3 text-label text-background shadow-glow;
+  }
+
+  .btn-primary-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 32px rgba(242, 166, 90, 0.24);
+  }
+
+  .btn-secondary-premium {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-glass-border bg-glass px-5 py-3 text-label text-text-primary backdrop-blur-md;
+  }
+
+  .btn-secondary-premium:hover {
+    transform: translateY(-2px);
+    @apply border-white/20 bg-white/10;
+  }
+
+  .nav-glass {
+    @apply border border-glass-border bg-surface/70 backdrop-blur-xl;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+  }
+
+  .input-premium {
+    @apply w-full rounded-2xl border border-glass-border bg-white/5 px-4 py-3 text-body text-text-primary placeholder:text-text-muted focus:border-accent focus:bg-white/10 focus:outline-none;
+  }
+
+  .scroll-indicator-line {
+    background: linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(255,255,255,0.02) 100%);
+  }
+}
